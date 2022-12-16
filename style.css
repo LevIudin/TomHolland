@@ -1,0 +1,555 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*my code*/
+#container{ width: 100vw;
+height: 100vh;}
+
+@font-face {
+font-family:'Mochiy Pop P One',sans-serif;}
+
+body {font-family:'Cabin', sans-serif;}
+
+h1 {font-family: 'Mochiy Pop P One',sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #090909;}
+
+/*Navigation*/
+.navigation {
+    margin: 0;
+    /* Sizing */
+    width: 100%;
+    height: 10vh;
+    background-color: #FFFDEE;
+    position: fixed;
+	  z-index: +100;}
+		.nav-inner
+		  /* Flexbox */
+		  {display: flex;
+		  flex-direction: row;
+		  justify-content: space-between;
+		  align-items: center;
+			padding-top: 1rem;
+		}
+
+		.logo a {
+		    margin: 0;
+		    font-family: 'Mochiy Pop P One',sans-serif;
+		    font-size: 2rem;
+		    color: black;
+		    padding: 1rem 2rem;
+		    text-decoration: none;}
+
+		.logo a:hover {
+			    color: #4743BD;
+			}
+
+			.nav-menu {
+			    display: flex;
+			    flex-direction: row;
+			}
+
+			.nav-menu a {
+			    text-decoration: none;
+			    color: black;
+			    font-family: 'Oswald', sans-serif;
+			    padding: 0rem 2rem;
+			    font-size: 1.5rem;
+			}
+
+			.nav-menu a:hover {
+			    color: #4743BD;
+			}
+
+			#global_footer {
+		font-family:'Oswald', sans-serif;
+    display: flex;
+    background-color:black;
+    justify-content:space-between;
+    align-items:center;
+    padding: 0rem 1rem;}
+
+		#global_footer p{
+    font-size: 1.5rem;
+    color: white;}
+
+		/* index - Hero*/
+
+html {
+    scroll-behavior:smooth ;
+  }
+
+.hero {
+   /* Sizing */
+   width: 100vw;
+   height: 100vh;
+
+   /* Flexbox  */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   /* Text styles */
+   text-align: center;
+   color: white;
+
+   /* Background  */
+   background-image: linear-gradient(rgb(43 39 100),rgb(175 63 63 / 40%)), url(images/new-york-city.jpg);
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 3rem;
+    color: #FFFDEE;
+
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    /* Text styles */
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+
+    /* Margins */
+    margin: 5rem 25rem;
+    width: auto;
+}
+/*Non index Hero*/
+html {
+		scroll-behavior: smooth;
+	}
+
+.herocredits {
+	 /* Sizing */
+	 width: 100vw;
+	 height: 100vh;
+
+	 /* Flexbox stuff */
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+
+	 /* Text styles */
+	 text-align: center;
+	 color: white;
+
+	 /* Background stuff */
+	 background-image: linear-gradient(rgb(43 39 100),rgb(175 63 63 / 40%)), url(images/vid-na-london.jpg);
+	 background-size: cover;
+	 background-position: center center;
+	 background-repeat: no-repeat;
+	 background-attachment: fixed;
+}
+
+.herocredits h1 {
+		/* Text styles */
+		font-size: 3rem;
+		color: #FFFDEE;
+
+		/* Margins */
+		margin-top: 0;
+		margin-bottom: 0.5em;
+}
+
+.herocredits p {
+		/* Text styles */
+		font-size: 2rem;
+		font-family: 'Oswald', sans-serif;
+
+		/* Margins */
+		margin: 5rem 25rem;
+		width: auto;
+}
+html {
+		scroll-behavior: smooth;
+	}
+
+.herobiography {
+	 /* Sizing */
+	 width: 100vw;
+	 height: 100vh;
+
+	 /* Flexbox  */
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+
+	 /* Text styles */
+	 text-align: center;
+	 color: white;
+
+	 /* Background  */
+	 background-image: linear-gradient(rgb(43 39 100),rgb(175 63 63 / 40%)), url(images/newyork1.jpg);
+	 background-size: cover;
+	 background-position: center center;
+	 background-repeat: no-repeat;
+	 background-attachment: fixed;
+}
+
+.herobiography h1 {
+		/* Text styles */
+		font-size: 3rem;
+		color: #FFFDEE;
+
+		/* Margins */
+		margin-top: 0;
+		margin-bottom: 0.5em;
+}
+
+.herobiography p {
+		/* Text styles */
+		font-size: 2rem;
+		font-family: 'Oswald', sans-serif;
+
+		/* Margins */
+		margin: 5rem 25rem;
+		width: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.heromedia {
+   /* Sizing */
+   width: 100vw;
+   height: 100vh;
+
+   /* Flexbox  */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   /* Text styles */
+   text-align: center;
+   color: white;
+
+   /* Background  */
+   background-image: linear-gradient(rgb(43 39 100),rgb(175 63 63 / 40%)), url(images/new-york-city.jpg);
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+.heromedia h1 {
+    /* Text styles */
+    font-size: 3rem;
+    color: #FFFDEE;
+
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.heromedia p {
+    /* Text styles */
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+
+    /* Margins */
+    margin: 5rem 25rem;
+    width: auto;
+}
+
+html {
+		scroll-behavior: smooth;
+	}
+
+.heroauthor {
+	 /* Sizing */
+	 width: 100vw;
+	 height: 100vh;
+
+	 /* Flexbox */
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+
+	 /* Text styles */
+	 text-align: center;
+	 color: white;
+
+	 /* Background */
+	 background-image: linear-gradient(rgb(43 39 100),rgb(175 63 63 / 40%)), url(images/newyork1.jpg);
+	 background-size: cover;
+	 background-position: center center;
+	 background-repeat: no-repeat;
+	 background-attachment: fixed;
+}
+
+.heroauthor h1 {
+		/* Text styles */
+		font-size: 3rem;
+		color: #FFFDEE;
+
+		/* Margins */
+		margin-top: 0;
+		margin-bottom: 0.5em;
+}
+
+.heroauthor p {
+		/* Text styles */
+		font-size: 2rem;
+		font-family: 'Oswald', sans-serif;
+
+		/* Margins */
+		margin: 5rem 25rem;
+		width: auto;
+}
+/*About*/
+.about {display: flex;
+flex-wrap: wrap;}
+.photopar {display: flex;
+	align-items: center;
+    font-family: 'Oswald', sans-serif;
+		justify-content: center;
+    padding: 2rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align:center;
+    width: auto;}
+		.photopar p {margin:2rem;
+		text-align:left;}
+		.photopar img {border-radius: 10rem}
+
+h2 {
+    font-family:'Mochiy Pop P One',sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    color: black;
+		margin: 1rem;}
+
+		.photo1 {display: flex;
+			flex-direction: row-reverse;
+			align-items: center;
+		    font-family: 'Oswald', sans-serif;
+		    padding: 2rem;
+		    font-size: 1.4rem;
+		    line-height: 2rem;
+		    text-align:center;
+		    width: auto;}
+				.photo1 img {border-radius: 10rem}
+				.photo1 {margin: 2rem;}
+
+
+				html {
+						scroll-behavior: smooth;
+					}
+
+				.heronews {
+					 /* Sizing */
+					 width: 100vw;
+					 height: 100vh;
+
+					 /* Flexbox */
+					 display: flex;
+					 justify-content: center;
+					 align-items: center;
+
+					 /* Text styles */
+					 text-align: center;
+					 color: white;
+
+					 /* Background stuff */
+					 background-image: linear-gradient(rgb(43 39 100),rgb(175 63 63 / 40%)), url(images/vid-na-london.jpg);
+					 background-size: cover;
+					 background-position: center center;
+					 background-repeat: no-repeat;
+					 background-attachment: fixed;
+				}
+
+				.heronews h1 {
+						/* Text styles */
+						font-size: 3rem;
+						color: #FFFDEE;
+
+						/* Margins */
+						margin-top: 0;
+						margin-bottom: 0.5em;
+				}
+
+				.heronews p {
+						/* Text styles */
+						font-size: 2rem;
+						font-family: 'Oswald', sans-serif;
+
+						/* Margins */
+						margin: 5rem 25rem;
+						width: auto;
+				}
+
+		/*Biography*/
+
+		.Biography {display: flex;
+		flex-wrap:wrap;flex-direction: column;}
+		.photobiography1 {display: flex; flex-direction:column;
+			  align-items: center;
+		    font-family: 'Oswald', sans-serif;
+				justify-content: center;
+		    padding: 0rem;
+		    font-size: 1.4rem;
+		    line-height: 3rem;
+		    text-align:center;
+		    width: auto;}
+				.photobiography1 p {margin:2rem;
+				text-align:left;}
+				.photobiography1 img {border-radius: 10rem}
+
+				.photobiography2 {display: flex;
+					flex-direction: row-reverse;
+					align-items: center;
+				    font-family: 'Oswald', sans-serif;
+				    padding: 2rem;
+				    font-size: 1.4rem;
+				    line-height: 3rem;
+				    text-align:center;
+				    width: auto;}
+						.photobiography2 img {border-radius: 10rem;margin:2rem;}
+						.photobiography2{margin:2rem;}
+
+
+
+
+	/*Acting Credits*/
+		.films {padding: 2rem 0rem;
+    background-color: white;}
+
+ .films h3 {
+     color:black;
+     margin: 0rem;
+ }
+
+ .film-library {
+     display: flex;
+     flex-direction: row;
+     flex-flow:row wrap;
+     justify-content: space-around;
+ }
+
+ .film-poster {
+    border: solid;
+     padding: 1rem 1.5rem;
+     margin: 2rem 2rem;
+     margin-bottom: 0rem;
+     text-align: center;
+
+ }
+
+.film-poster h3 {
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+}
+
+ .film-poster img {
+     height: 325px;
+     width: 220px;
+     border-radius: 10px;
+     margin: 1rem;
+ }
+
+ }
+ /*Media About Tom*/
+ .Media-library h3 {
+	color:black;
+	margin: 1rem;
+}
+
+.Media-library {
+	display: flex;
+	flex-direction: row;
+	flex-flow:row wrap;
+	justify-content: space-around;
+}
+
+.media-poster {
+	padding: 1rem 1.5rem;
+	margin: 2rem 2rem;
+	margin-bottom: 0rem;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.media-poster h3 {
+ font-size: 2rem;
+ font-family: 'Oswald', sans-serif;
+ margin: 1.5rem;}
+ /*Author page*/
+
+ .me {display: flex; flex-direction:column;
+		 align-items: center;
+		 font-family: 'Oswald', sans-serif;
+		 padding: 0rem;
+		 font-size: 1.4rem;
+		 line-height: 3rem;
+		 width: auto;
+	   margin:2rem;}
+		 .paragraph p {margin:2rem;
+		 text-align:center;}
+		 .photo img {border-radius: 10rem}
+		 /*Latest News*/
+    .news-library {display: flex;
+			font-family: 'Oswald',sans-serif;
+			flex-direction: row;
+			flex-flow:row wrap;
+			justify-content: space-around;
+			margin:2rem;
+		}
+		 .news-library a {font-size:2rem;
+			 display: flex;
+		 	flex-direction: column;
+		text-decoration: none;
+		padding: 1rem;
+	  }
+		.news-library a:hover {
+			    color: #4743BD;}
+		.news-library img	{border-radius: 20px;}
